@@ -4,29 +4,32 @@
 
 
 
-headphone = 999
-smartwatch = 1599
-PS5 = 1299
-ipad = 599
+headphone = 999 #Strings were removed as integer values must be stored to calculate the final bill
+smartwatch = 1599 #Strings were removed as integer values must be stored to calculate the final bill
+PS5 = 1299 #Strings were removed as integer values must be stored to calculate the final bill
+ipad = 599 #Strings were removed as integer values must be stored to calculate the final bill
 
 
-productName = input("Enter Product Name: ").lower().strip()
+productName = input("Enter Product Name: ").lower().strip()#Unnecessary semicolons were removed due to incorrect syntax
+#Enhancing: lower and strip string functions were added to avoid the case sensitivity while taking and storing the input. 
 
 
-quantity = int(input("Enter the Quantity of the Product: "))
+quantity = int(input("Enter the Quantity of the Product: "))#Unnecessary semicolons were removed due to incorrect syntax
+#typecasting was done as quantity needed to be in integers in order to calculate the bill. 
 
 
 if productName == "headphone":
-    totalPrice = headphone * quantity
+    totalPrice = headphone * quantity #Unnecessary semicolons were removed due to incorrect syntax
 
 elif productName == "smartwatch":
-    totalPrice = smartwatch * quantity
-
+    totalPrice = smartwatch * quantity #Unnecessary semicolons were removed due to incorrect syntax
+    #Name correction was done
 elif productName == "ps5":
-    totalPrice = PS5 * quantity
-
+    totalPrice = PS5 * quantity #Unnecessary semicolons were removed due to incorrect syntax
+    #Name correction was done
 elif productName == "ipad":
-    totalPrice = ipad * quantity
+    totalPrice = ipad * quantity #Unnecessary semicolons were removed due to incorrect syntax 
+    #Name correction was done
 
+print(f"Total Amount To Be Paid: {totalPrice}") 
 
-print(f"Total Amount To Be Paid: {totalPrice}")
