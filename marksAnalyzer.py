@@ -3,60 +3,59 @@
 # The program should determine the highest marks, lowest marks, and average marks obtained by the student, and display all three results.
 
 # Variables to Store Highest, Lowest and Average Marks
-highestMarks = 0;
-lowestMarks = 100;
+highestMarks = 100 #Unnecessary semicolons were removed due to incorrect syntax #incorrect value was written in the variable it was supposed to be 100 
+lowestMarks = 0 #Unnecessary semicolons were removed due to incorrect syntax #incorrect value was written in the variable it was supposed to be 0 
 
 
-# Taking Marks for Five Subjects as Input
-subject1 = input("Enter Marks for Subject 1: ");
-subject2 = input("Enter Marks for Subject 2: ");
-subject3 = input("Enter Marks for Subject 3: ");
-subject4 = input("Enter Marks for Subject 4: ");
-subject5 = input("Enter Marks for Subject 5: ");
+# Taking Marks for Five Subjects as Inputint(
+subject1 = int(input("Enter Marks for Subject 1: ")) #Unnecessary semicolons were removed due to incorrect syntax #Typecasting was done to change store the entered value as integer in the variable
+subject2 = int(input("Enter Marks for Subject 2: ")) #Unnecessary semicolons were removed due to incorrect syntax #Typecasting was done to change store the entered value as integer in the variable
+subject3 = int(input("Enter Marks for Subject 3: ")) #Unnecessary semicolons were removed due to incorrect syntax #Typecasting was done to change store the entered value as integer in the variable
+subject4 = int(input("Enter Marks for Subject 4: ")) #Unnecessary semicolons were removed due to incorrect syntax #Typecasting was done to change store the entered value as integer in the variable
+subject5 = int(input("Enter Marks for Subject 5: ")) #Unnecessary semicolons were removed due to incorrect syntax #Typecasting was done to change store the entered value as integer in the variable
 
 
 
-# Finding the Highest Marks
-if highestMarks < subject1:
-    highestMarks = highestMarks + subject1;
+# Finding the Highest Marks 
+#If condition logics were changed as they were wrong for evaluating the highest marks 
+if subject1>subject2 and subject1>subject3 and subject1>subject4 and subject1>subject5 :
+    print(f"Highest Marks = {subject1}") #Unnecessary semicolons were removed due to incorrect syntax
 
-if highestMarks < subject2:
-    highestMarks = highestMarks + subject2;
+elif subject2>subject3 and subject2>subject1 and subject2>subject4 and subject2>subject5 :
+    print(f"Highest Marks = {subject2}") #Unnecessary semicolons were removed due to incorrect syntax
 
-if highestMarks < subject3:
-    highestMarks = highestMarks + subject3;
+elif subject3>subject1 and subject3>subject2 and subject3>subject4 and subject3>subject5 :
+    print(f"Highest Marks = {subject3}") #Unnecessary semicolons were removed due to incorrect syntax
 
-if highestMarks < subject4:
-    highestMarks = highestMarks + subject4;
+elif subject4>subject1 and subject4>subject2 and subject4>subject3 and subject4>subject5 :
+    print(f"Highest Marks = {subject4}") #Unnecessary semicolons were removed due to incorrect syntax
 
-if highestMarks < subject5:
-    highestMarks = highestMarks + subject5;
+elif subject5>subject1 and subject5>subject2 and subject5>subject3 and subject5>subject4 :  
+    print(f"Highest Marks = {subject5}") #Unnecessary semicolons were removed due to incorrect syntax
 
 
 
 
 # Finding the Lowest Marks
-if lowestMarks < subject1:
-    lowestMarks = subject1;
+if subject1<subject2 and subject1<subject3 and subject1<subject4 and subject1<subject5 :
+    print(f"Lowest Marks = {subject1}") #Unnecessary semicolons were removed due to incorrect syntax
 
-if lowestMarks < subject2:
-    lowestMarks = subject2;
+elif subject2<subject3 and subject2<subject1 and subject2<subject4 and subject2<subject5 :
+    print(f"Lowest Marks = {subject2}") #Unnecessary semicolons were removed due to incorrect syntax
 
-if lowestMarks < subject3:
-    lowestMarks = subject3;
+elif subject3<subject1 and subject3<subject2 and subject3<subject4 and subject3<subject5 :
+    print(f"Lowest Marks = {subject3}") #Unnecessary semicolons were removed due to incorrect syntax
 
-if lowestMarks < subject4:
-    lowestMarks = subject4;
+elif subject4<subject1 and subject4<subject2 and subject4<subject3 and subject4<subject5 :
+    print(f"Lowest Marks = {subject4}") #Unnecessary semicolons were removed due to incorrect syntax
 
-if lowestMarks < subject5:
-    lowestMarks = subject5;
+elif subject5<subject1 and subject5<subject2 and subject5<subject3 and subject5<subject4 :  
+    print(f"Lowest Marks = {subject5}") #Unnecessary semicolons were removed due to incorrect syntax
 
 
 
 # Calculating the Average Marks
-avg = subject1 + subject2 + subject3 + subject4 + subject5 / 5;
+avg = (subject1 + subject2 + subject3 + subject4 + subject5) / 5 #Unnecessary semicolons were removed due to incorrect syntax
 
-# Displaying the Results
-print(f"Highest: {highestMarks}");
-print(f"Lowest: {lowestMarks}");
-print(f"Average: {avg}");
+# Displaying the Results 
+print(f"Average: {avg}") #Unnecessary semicolons were removed due to incorrect syntax
