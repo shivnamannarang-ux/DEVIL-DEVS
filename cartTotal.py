@@ -4,29 +4,29 @@
 
 
 
-headPhone = "999";
-smartWatch = "1599";
-PS5 = "1299";
-iPad = "599";
+headphone = 999
+smartwatch = 1599
+PS5 = 1299
+ipad = 599
 
 
-productName = input("Enter Product Name: ");
+productName = input("Enter Product Name: ").lower().strip()
 
 
-quantity = input("Enter the Quantity of the Product: ");
+quantity = int(input("Enter the Quantity of the Product: "))
 
 
-if productName == "headPhone":
-    totalPrice = headPhone * quantity;
+if productName == "headphone":
+    totalPrice = headphone * quantity
 
-elif productName == "smartWatch":
-    totalPrice = headPhone * quantity;
+elif productName == "smartwatch":
+    totalPrice = smartwatch * quantity
 
-elif productName == "PS5":
-    totalPrice = headPhone * quantity;
+elif productName == "ps5":
+    totalPrice = PS5 * quantity
 
-elif productName == "iPad":
-    totalPrice = headPhone * quantity;
+elif productName == "ipad":
+    totalPrice = ipad * quantity
 
 
-print(f"Total Amount To Be Paid: {totalPrice}");
+print(f"Total Amount To Be Paid: {totalPrice}")
